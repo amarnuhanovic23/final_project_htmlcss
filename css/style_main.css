@@ -87,3 +87,17 @@
     display: table;
     clear: both;
 }
+#h1wphoto {
+    font-size: 100px;
+    font-weight: 900;
+
+    background-image: url("../images/minecraft.jpg");
+    background-size: cover;
+    background-position: center;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
