@@ -90,12 +90,13 @@ body {
     width: max-content;
     white-space: nowrap;
     padding: 10px;
-    background-color: white;
+    background-color: black;
     height: 250px;
+    color: white;
 }
 
 .column a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -129,17 +130,22 @@ body {
     display: inline-block;
     height: fit-content;
     margin: 10px;
-    border : 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border : 1px solid red;
     text-align: center;
     padding: 20px;
     min-width: 220px;   
     flex: 0 0 auto;     
-    background: #fff;
+    background: black;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
+    color: white;
+    transition: transform 300ms ease;
     
+}
+.game-item:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 10px white;
 }
 .game-item-image {
     width: 250px;
@@ -169,4 +175,13 @@ body {
 
 .game-list::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+.game-card-class {
+    color: white;
+    font-size: 25px;
+    transition-duration: 300ms;
+}
+.game-card-class:hover {
+    color: red;
+    font-size: 30px;
 }
