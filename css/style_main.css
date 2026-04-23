@@ -10,11 +10,11 @@ header {
     padding: 0;
     background-color: #000;
 }
-
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to bottom, #050505, #111111, #1a1a1a);
+    overflow: visible;
 }
 
 
@@ -24,10 +24,12 @@ body {
     align-items: center;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
     position: sticky;
     top: 0;
-    margin: 0;
-    padding: 0;
+    z-index: 1000;
 }
 
 
@@ -113,7 +115,7 @@ body {
     clear: both;
 }
 #h1wphoto {
-    font-size: 100px;
+    font-size: clamp(40px, 8vw, 100px);
     font-weight: 900;
 
     background-image: url("../images/redw.jpg");
@@ -125,6 +127,12 @@ body {
 
     color: transparent;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+}
+#h3top {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 300px;
 }
 .game-item {
     display: inline-block;
@@ -132,7 +140,6 @@ body {
     margin: 10px;
     border : 1px solid red;
     text-align: center;
-    padding: 20px;
     min-width: 220px;   
     flex: 0 0 auto;     
     background: black;
@@ -162,6 +169,8 @@ body {
     white-space: nowrap;
     padding: 10px 0;
     scroll-behavior: smooth;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .game-list::-webkit-scrollbar {
@@ -175,6 +184,11 @@ body {
 
 .game-list::-webkit-scrollbar-thumb:hover {
     background: #555;
+    cursor: -webkit-grab;
+}
+.game-list::-webkit-scrollbar-thumb:hover:active {
+    background: #333;
+    cursor: -webkit-grabbing;
 }
 .game-card-class {
     color: white;
@@ -184,4 +198,12 @@ body {
 .game-card-class:hover {
     color: red;
     font-size: 30px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
