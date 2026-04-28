@@ -207,3 +207,45 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 90%;         
+      max-width: 1200px;   
+      margin: auto;
+      padding: 20px;
+    }
+
+    .box {
+      width: 100%;
+      min-height: 200px;
+      background: lightblue;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Smaller screens */
+    @media (max-width: 768px) {
+      .box {
+        min-height: 150px;
+        padding: 15px;
+      }
+    }
+
+    /* Very small screens */
+    @media (max-width: 480px) {
+      .box {
+        min-height: 120px;
+        padding: 10px;
+      }
+    }
